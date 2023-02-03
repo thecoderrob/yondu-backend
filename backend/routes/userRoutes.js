@@ -11,8 +11,16 @@ const {
   loginUser,
 } = require("../controllers/userController");
 
-router.route("/").get(getUsers).post(createUser).delete(deleteUsers);
-router.route("/:id").get(getUser).put(updateUser).delete(deleteUser);
+router
+  .route("/")
+  .get(protect, getUsers)
+  .post(protect, createUser)
+  .delete(protect, deleteUsers);
+router
+  .route("/:id")
+  .get(protect, getUser)
+  .put(protect, updateUser)
+  .delete(protect, deleteUser);
 router.route("/login").post(loginUser);
 
 module.exports = router;

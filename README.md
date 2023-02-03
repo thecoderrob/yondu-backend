@@ -15,12 +15,12 @@ API Backend Node.js Diagnostic Exam
 2. Create a '.env' file
 3. Add the following values to your .env file
 
-MYSQL_USER='root' // Change or keep based on your MySQL credentials
-MYSQL_PASSWORD='' // Change or keep based on your MySQL credentials
-MYSQL_HOST='localhost' // Change or keep based on your MySQL credentials
-MYSQL_DATABASE='users_db' // Keep this as is
+- MYSQL_USER='root' // Change or keep based on your MySQL credentials
+- MYSQL_PASSWORD='' // Change or keep based on your MySQL credentials
+- MYSQL_HOST='localhost' // Change or keep based on your MySQL credentials
+- MYSQL_DATABASE='users_db' // Keep this as is
 
-JWT_SECRET='secret' // You can change this to whatever you want
+- JWT_SECRET='secret' // You can change this to whatever you want
 
 ## Migration
 
