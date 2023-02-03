@@ -42,3 +42,15 @@ JWT_SECRET='secret' // You can change this to whatever you want
 1. Open the terminal and navigate to the root folder
 2. On the first terminal, type 'npm run server'
 3. On the second terminal, type 'npm run client'
+
+## Login Credentials
+
+Admin
+
+- username: admin
+- password: admin123
+
+Random user
+
+- username: _randomly generated username_
+- password: _the user's firstname (case sensitive)_
