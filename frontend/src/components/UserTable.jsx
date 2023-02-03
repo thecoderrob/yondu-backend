@@ -27,9 +27,7 @@ const UserTable = (users) => {
         <h2>Users Table</h2>
         <div className="table-buttons">
           <Link to="/users/create">
-            <Button variant="dark" onClick={() => dispatch(deleteUsers(ids))}>
-              Add a user
-            </Button>
+            <Button variant="dark">Add a user</Button>
           </Link>
           <Button variant="danger" onClick={() => dispatch(deleteUsers(ids))}>
             Delete Selected Users

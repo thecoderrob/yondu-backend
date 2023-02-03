@@ -55,15 +55,6 @@ const UserForm = () => {
     });
   };
 
-  const { isSuccess, isError, message } = useSelector((state) => state.users);
-  useEffect(() => {
-    if (isSuccess) {
-      toast.success("Successfully added user! 🙂", {
-        position: toast.POSITION.BOTTOM_CENTER,
-      });
-    }
-  }, [isSuccess, isError, message]);
-
   return (
     <div>
       <Form onSubmit={handleSubmit} className="w-md">

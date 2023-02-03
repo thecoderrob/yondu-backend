@@ -6,7 +6,7 @@ import Users from "./pages/Users";
 import User from "./pages/User";
 import AddUser from "./pages/AddUser";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "./styles.css";
 const App = () => {
   return (
     <div className="App">

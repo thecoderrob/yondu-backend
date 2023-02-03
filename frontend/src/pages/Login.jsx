@@ -45,35 +45,37 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container container">
-      <Form onSubmit={handleSubmit} className="w-sm">
-        <Form.Group className="mb-3" controlId="username">
-          <Form.Label>Username</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Enter username"
-            name="username"
-            value={username}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
+    <div className="login-container-wrapper">
+      <div className="login-container container">
+        <Form onSubmit={handleSubmit} className="w-sm">
+          <Form.Group className="mb-3" controlId="username">
+            <Form.Label>Username</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter username"
+              name="username"
+              value={username}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
 
-        <Form.Group className="mb-3" controlId="password">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Password"
-            name="password"
-            value={password}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
-        <Button variant="dark w-100" type="submit">
-          {isLoading ? <SpinnerComponent /> : <>Login</>}
-        </Button>
-      </Form>
+          <Form.Group className="mb-3" controlId="password">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              type="password"
+              placeholder="Password"
+              name="password"
+              value={password}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
+          <Button variant="dark w-100" type="submit">
+            {isLoading ? <SpinnerComponent /> : <>Login</>}
+          </Button>
+        </Form>
+      </div>
     </div>
   );
 };

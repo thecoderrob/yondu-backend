@@ -15,7 +15,7 @@ const User = () => {
       navigate("/");
     }
 
-    if (!user.isAdmin) {
+    if (user && !user.isAdmin) {
       navigate("/home");
     }
   });

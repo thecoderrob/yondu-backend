@@ -129,3 +129,18 @@ label {
   gap: 0.5rem;
   align-items: center;
 }
+
+.login-container-wrapper {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+
+  background: #fafafa;
+}
+
+.login-container {
+  border: 1px solid rgb(0 0 0 / 0.15);
+  border-radius: 1.5rem;
+  max-width: 25em;
+  padding: clamp(0.75rem, 1.75vw, 1.5rem);
+}
